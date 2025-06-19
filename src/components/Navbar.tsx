@@ -59,9 +59,6 @@ const Navbar: React.FC = () => {
             <a href="#events" className={`${textColor} hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200`}>
               Events
             </a>
-            <a href="#staff-recruitment" className={`${textColor} hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200`}>
-              Join Staff
-            </a>
             <ThemeToggle />
             <a 
               href="https://discord.gg/kazeindo" 
@@ -116,13 +113,6 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
             >
               Events
-            </a>
-            <a 
-              href="#staff-recruitment" 
-              className="block px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md"
-              onClick={() => setIsOpen(false)}
-            >
-              Join Staff
             </a>
             <a 
               href="https://discord.gg/kazeindo" 

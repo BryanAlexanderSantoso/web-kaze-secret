@@ -43,7 +43,7 @@ const StaffRecruitment: React.FC = () => {
     "Minimal aktif 3 hari seminggu",
     "Punya komunikasi yang baik",
     "Siap kerja sama bareng tim",
-    "Member kaze serenity selama beberapa bulan"
+    "Member kaze serenity selama beberapa bulan * khusus pelamar Staff Moderator"
   ];
 
   const containerVariants = {
@@ -388,7 +388,7 @@ const StaffRecruitment: React.FC = () => {
                 boxShadow: "0 0 40px rgba(168, 85, 247, 0.6)"
               }}
               whileTap={{ scale: 0.95 }}
-              href="https://forms.gle/7Zhwg7WpSAEgP8xP7"
+              href="https://forms.gle/Rs1xbmz7LzNrpMvt9"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 hover:from-purple-700 hover:via-pink-700 hover:to-cyan-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all duration-300 shadow-2xl group relative overflow-hidden"

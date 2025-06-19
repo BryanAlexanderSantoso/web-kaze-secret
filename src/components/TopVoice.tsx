@@ -13,27 +13,27 @@ const TopVoice: React.FC = () => {
   const topVoiceUsers = [
     {
       rank: 1,
-      username: "Near_Developer",
-      avatar: "https://i.pinimg.com/736x/c9/7d/42/c97d42039abeff996d311fea0e1f5d51.jpg",
-      totalHours: 127,
+      username: "yooooeeeeee",
+      avatar: "https://ik.imagekit.io/1yqrowr2y/d63fc8a540bb0bf2dc4c32f722dccf6f.png?updatedAt=1750202278242",
+      totalHours: 194.48,
       totalDays: 28,
-      badge: "Voice Champion"
+      badge: "Top Voice 1st"
     },
     {
       rank: 2,
-      username: "Meepo_CO",
-      avatar: "https://cdn.discordapp.com/avatars/1116236451244421182/a_dfdc8097dc86df4575558e8dc6ece2b6.gif?size=4096",
-      totalHours: 98,
+      username: "ky",
+      avatar: "https://ik.imagekit.io/1yqrowr2y/3aa2ee91c3387847de8306f3965ba817.png?updatedAt=1750202274862",
+      totalHours: 139.75,
       totalDays: 25,
-      badge: "Voice Master"
+      badge: "Top Voice 2nd"
     },
     {
       rank: 3,
-      username: "Bryan_Developer",
-      avatar: "https://media1.tenor.com/m/mDnIiloFauUAAAAd/fujii-kaze-matsuri.gif",
-      totalHours: 85,
+      username: "reyzenzou",
+      avatar: "https://ik.imagekit.io/1yqrowr2y/a89708e7485323efb36b16d44cee1c48.png?updatedAt=1750202278749",
+      totalHours: 72.35,
       totalDays: 22,
-      badge: "Voice Expert"
+      badge: "Top Voice 3rd"
     }
   ];
 
@@ -336,7 +336,7 @@ const TopVoice: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
         >
-          {topVoiceUsers.map((user, index) => (
+          {topVoiceUsers.map((user) => (
             <motion.div
               key={user.username}
               whileHover={{ scale: 1.05, y: -5 }}
@@ -411,7 +411,7 @@ const TopVoice: React.FC = () => {
             Join Voice Sekarang!
           </motion.a>
           <p className="text-sm text-gray-400 mt-4">
-            * Data diperbarui setiap hari berdasarkan aktivitas voice chat
+            * Data diperbarui setiap bulan berdasarkan aktivitas voice chat
           </p>
         </motion.div>
       </div>

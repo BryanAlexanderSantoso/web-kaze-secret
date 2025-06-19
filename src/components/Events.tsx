@@ -102,11 +102,7 @@ const Events: React.FC = () => {
       name: "Alex Xian Kenzo_Staff Server",
       avatar: "https://i.pinimg.com/736x/51/d6/9b/51d69b890732548e1380d9eed86493b0.jpg",
     },
-    {
-      quote: "tidak ada yang mustahil jika kita mau berusaha.",
-      name: "Rae_Staff Server",
-      avatar: "https://i.pinimg.com/736x/69/d6/1f/69d61f474e388e7eccc92ec5017f572d.jpg",
-    },
+
     {
       quote: "jangan ragu untuk melangkah maju, ambil resikonya, nikmati prosesnya, dan nantikan hasilnyaa.",
       name: "Tyaa-chan_Staff Server",
@@ -115,7 +111,7 @@ const Events: React.FC = () => {
     {
       quote: "Jika mata adalah cahaya, Maka hati adalah permata, Jika senyum adalah ibadah, Maka mengenalmu adalah anugerah",
       name: "Haru_Staff Server",
-      avatar: "https://i.pinimg.com/736x/68/ef/d0/68efd057db02e83a42e3fa7090a9ea12.jpg",
+      avatar: "https://cdn.discordapp.com/attachments/1333697196159143970/1376094619854573618/leon_senter.gif?ex=68530ebb&is=6851bd3b&hm=43d222d876ebabf46a908b5e22cf679b8b2a402c58abe4b15b14678aab67ad2b&",
     },
     {
       quote: "If loving you is a sin, Then I'll gladly become a sinner. Jiee, My beloved",
