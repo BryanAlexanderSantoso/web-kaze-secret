@@ -24,6 +24,7 @@ const Footer: React.FC = () => {
                 <li><a href="#collaborations" className="text-gray-400 hover:text-white transition-colors duration-200">Collaborations</a></li>
                 <li><a href="#partnership" className="text-gray-400 hover:text-white transition-colors duration-200">Partnership</a></li>
                 <li><a href="#events" className="text-gray-400 hover:text-white transition-colors duration-200">Events</a></li>
+                <li><a href="#team" className="text-gray-400 hover:text-white transition-colors duration-200">Team</a></li>
               </ul>
             </div>
             
