@@ -1,47 +1,33 @@
-import { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Collaborations from './components/Collaborations';
-import Partnership from './components/Partnership';
-import Events from './components/Events';
-import TopVoice from './components/TopVoice';
-import TeamStructure from './components/TeamStructure';
-import StaffRecruitment from './components/StaffRecruitment';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Navbar from './components/layout/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Features from './pages/Features';
+import Gallery from './pages/Gallery';
+import Join from './pages/Join';
+import Contact from './pages/Contact';
 import { ThemeProvider } from './context/ThemeContext';
 import './styles/animations.css';
 
 function App() {
-  useEffect(() => {
-    document.title = 'Kaze Serenity - Join Our Discord Community';
-  }, []);
-
   return (
     <ThemeProvider>
-      <AnimatePresence mode="wait">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200"
-        >
+      <Router>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
           <Navbar />
-          <Hero />
-          <About />
-          <Collaborations />
-          <Partnership />
-          <Events />
-          <TopVoice />
-          <TeamStructure />
-          <StaffRecruitment />
-          <CTA />
-          <Footer />
-        </motion.div>
-      </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/features" element={<Features />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/join" element={<Join />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }
